@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shubham Vishwakarma — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="mesh-bg" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow--one" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow--two" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a href="#top" class="logo">SV</a>
+    <nav class="nav" aria-label="Primary">
+      <button type="button" class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" id="nav-toggle">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <ul class="nav__list" id="nav-menu">
+        <li><a href="#about" class="nav__link magnetic" data-magnetic>About</a></li>
+        <li><a href="#skills" class="nav__link magnetic" data-magnetic>Skills</a></li>
+        <li><a href="#education" class="nav__link magnetic" data-magnetic>Education</a></li>
+        <li><a href="#contact" class="nav__link magnetic" data-magnetic>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__frame" data-parallax="0.04">
+        <div class="hero__wire" aria-hidden="true">
+          <svg class="hero__svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="200" cy="200" r="160" stroke="currentColor" stroke-width="0.5" stroke-dasharray="4 12" opacity="0.35" />
+            <circle cx="200" cy="200" r="120" stroke="currentColor" stroke-width="0.5" opacity="0.2" />
+            <path d="M40 200h320M200 40v320" stroke="currentColor" stroke-width="0.35" opacity="0.15" />
+          </svg>
+        </div>
+        <div class="hero__window" aria-hidden="true"></div>
+        <div class="hero__content">
+          <p class="hero__label"><span class="hero__label-dot"></span> Student · Builder · Learner</p>
+          <h1 class="hero__title">
+            <span class="sr-only">Shubham Vishwakarma</span>
+            <span class="hero__name hero__name--chars" id="hero-name" aria-hidden="true"></span>
+          </h1>
+          <p class="hero__type" id="typed-line" aria-live="polite"></p>
+          <p class="hero__lead">
+            Crafting calm digital spaces—where clarity meets curiosity. Exploring AI, full-stack tools, and thoughtful interfaces.
+          </p>
+          <div class="hero__actions">
+            <a href="#about" class="btn btn--primary magnetic" data-magnetic>Enter studio</a>
+            <a href="#contact" class="btn btn--ghost magnetic" data-magnetic>Say hello</a>
+          </div>
+        </div>
+        <div class="hero__stamp" aria-hidden="true">SV · 26</div>
+      </div>
+      <div class="hero__scroll-hint">
+        <span>Step inside</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span class="marquee__item">HTML</span>
+        <span class="marquee__sep">◆</span>
+        <span class="marquee__item">CSS</span>
+        <span class="marquee__sep">◆</span>
+        <span class="marquee__item">JavaScript</span>
+        <span class="marquee__sep">◆</span>
+        <span class="marquee__item">React</span>
+        <span class="marquee__sep">◆</span>
+        <span class="marquee__item">Node</span>
+        <span class="marquee__sep">◆</span>
+        <span class="marquee__item">Python</span>
+        <span class="marquee__sep">◆</span>
+        <span class="marquee__item">MySQL</span>
+        <span class="marquee__sep">◆</span>
+        <span class="marquee__item">AI &amp; ML</span>
+        <span class="marquee__sep">◆</span>
+        <span class="marquee__item">Design</span>
+        <span class="marquee__sep">◆</span>
+        <span class="marquee__item">HTML</span>
+        <span class="marquee__sep">◆</span>
+        <span class="marquee__item">CSS</span>
+        <span class="marquee__sep">◆</span>
+        <span class="marquee__item">JavaScript</span>
+        <span class="marquee__sep">◆</span>
+        <span class="marquee__item">React</span>
+        <span class="marquee__sep">◆</span>
+        <span class="marquee__item">Node</span>
+        <span class="marquee__sep">◆</span>
+        <span class="marquee__item">Python</span>
+        <span class="marquee__sep">◆</span>
+        <span class="marquee__item">MySQL</span>
+        <span class="marquee__sep">◆</span>
+        <span class="marquee__item">AI &amp; ML</span>
+        <span class="marquee__sep">◆</span>
+        <span class="marquee__item">Design</span>
+        <span class="marquee__sep">◆</span>
+      </div>
+    </div>
+
+    <section class="section section--about" id="about">
+      <div class="section__inner">
+        <div class="room-label" data-reveal>Room 01 · Presence</div>
+        <h2 class="section__title section__title--deck" data-reveal><span class="title__layer">About</span><span class="title__sub">the space</span></h2>
+        <div class="about__grid">
+          <div class="about__panel" data-reveal data-tilt>
+            <h3 class="about__panel-title">Who I am</h3>
+            <p>
+              I am <strong>Shubham Vishwakarma</strong>, a student focused on growing skills across web technologies, backend fundamentals, and data. I enjoy learning how systems connect—from interfaces people touch to the databases that hold their stories.
+            </p>
+          </div>
+          <div class="about__accent" data-reveal aria-hidden="true">
+            <div class="about__accent-shape"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--skills" id="skills">
+      <div class="section__inner">
+        <div class="room-label" data-reveal>Room 02 · Craft</div>
+        <h2 class="section__title section__title--deck" data-reveal><span class="title__layer">Skills</span><span class="title__sub">&amp; tools</span></h2>
+        <p class="section__lead" data-reveal>
+          Tap a tile to highlight focus areas. The stack shifts with your curiosity.
+        </p>
+        <ul class="skills" id="skills-grid" aria-label="Technical skills">
+          <li class="skill" data-skill tabindex="0" data-reveal>HTML</li>
+          <li class="skill" data-skill tabindex="0" data-reveal>CSS</li>
+          <li class="skill" data-skill tabindex="0" data-reveal>JavaScript</li>
+          <li class="skill" data-skill tabindex="0" data-reveal>React</li>
+          <li class="skill" data-skill tabindex="0" data-reveal>Node.js</li>
+          <li class="skill" data-skill tabindex="0" data-reveal>Python</li>
+          <li class="skill" data-skill tabindex="0" data-reveal>MySQL</li>
+          <li class="skill" data-skill tabindex="0" data-reveal>Database Management</li>
+        </ul>
+        <p class="skills__hint" id="skill-hint" aria-live="polite">Hover or focus for a gentle glow.</p>
+      </div>
+    </section>
+
+    <section class="section section--education" id="education">
+      <div class="section__inner">
+        <div class="room-label" data-reveal>Room 03 · Foundation</div>
+        <h2 class="section__title section__title--deck" data-reveal><span class="title__layer">Higher</span><span class="title__sub">learning</span></h2>
+        <article class="edu-card" data-reveal>
+          <div class="edu-card__shell">
+            <div class="edu-card__badge">2025 — 2029</div>
+            <h3 class="edu-card__school">Shri Ramswroop Memorial University</h3>
+            <p class="edu-card__degree">B.Tech — Artificial Intelligence &amp; Machine Learning</p>
+            <p class="edu-card__note">
+              Building a strong base in intelligent systems while sharpening engineering and software practice.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contact">
+      <div class="section__inner">
+        <div class="room-label" data-reveal>Room 04 · Connection</div>
+        <h2 class="section__title section__title--deck" data-reveal><span class="title__layer">Let's</span><span class="title__sub">connect</span></h2>
+        <p class="section__lead" data-reveal>
+          Reach out for collaborations, questions, or a simple hello.
+        </p>
+        <div class="contact__grid" data-reveal>
+          <a class="contact__link contact__link--email magnetic" data-magnetic href="mailto:shubhamvishwakarma0803@gmail.com">
+            <span class="contact__corner" aria-hidden="true"></span>
+            <span class="contact__label">Email</span>
+            <span class="contact__value">shubhamvishwakarma0803@gmail.com</span>
+          </a>
+          <a class="contact__link magnetic" data-magnetic href="https://github.com/shubhamvishwakarma0803/Shubham.git" target="_blank" rel="noopener noreferrer">
+            <span class="contact__corner" aria-hidden="true"></span>
+            <span class="contact__label">GitHub</span>
+            <span class="contact__value">@shubhamvishwakarma0803</span>
+          </a>
+          <a class="contact__link magnetic" data-magnetic href="https://www.linkedin.com/in/shubham-vishwakarma-ba9a31381" target="_blank" rel="noopener noreferrer">
+            <span class="contact__corner" aria-hidden="true"></span>
+            <span class="contact__label">LinkedIn</span>
+            <span class="contact__value">Shubham Vishwakarma</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Shubham Vishwakarma. Designed as a quiet digital atelier.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
